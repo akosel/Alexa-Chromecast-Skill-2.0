@@ -60,7 +60,7 @@ echo "export AWS_SNS_TOPIC_ARN=$sns_topic_arn" >> .env
 
 # Create S3 Bucket (and store ARN in .env)
 echo "Creating $S3_BUCKET_NAME."
-s3_response=$(aws s3api create-bucket --bucket $S3_BUCKET_NAME --region $AWS_DEFAULT_REGION --create-bucket-configuration LocationConstraint=$AWS_DEFAULT_REGION)
+s3_response=$(aws s3api create-bucket --bucket $S3_BUCKET_NAME --region $AWS_DEFAULT_REGION)
 
 # Create Lambda function (and store ARN in .env)
 echo "Creating $LAMBDA_FUNCTION_NAME lambda function."

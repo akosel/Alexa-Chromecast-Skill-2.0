@@ -9,3 +9,4 @@ hooks/
 __pycache__
 *.log
 *.log.*
+.venv
